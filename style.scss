@@ -1,0 +1,27 @@
+.c-btn {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 5px 12px;
+  display: inline-block;
+}
+
+.modal {
+  display: none;
+  &.active {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .9);
+  width: 100%;
+  color: #fff;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+
+  p {
+    position: absolute;
+    bottom: 80px;
+  }
+}
